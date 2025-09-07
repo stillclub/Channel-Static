@@ -79,7 +79,7 @@ transform = Transform3D(30.7274, 0, 0, 0, 4.11789, 0, 0, 0, 31.4418, 0, 0, 0)
 mesh = SubResource("PlaneMesh_rxg2q")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_glv2v")]
-transform = Transform3D(1, 0, 0, 0, 1.14452, 0, 0, 0, 1, -0.0340281, 1.65148, -0.212939)
+transform = Transform3D(1, 0, 0, 0, 0.835976, 0, 0, 0, 0.89696, -0.0340281, 1.29517, -0.212939)
 bob_speed = 3.0
 debug_prints = false
 
