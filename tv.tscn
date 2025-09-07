@@ -108,7 +108,7 @@ shader_parameter/vignette_intensity = 0.5
 shader_parameter/vignette_opacity = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3aikg"]
-size = Vector3(1, 0.810059, 1.06635)
+size = Vector3(1, 0.810059, 1.57468)
 
 [node name="Node3D" type="Node3D"]
 
@@ -171,5 +171,5 @@ pivot_offset = Vector2(347, 234)
 [node name="Area3D" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.278564, 0.585846)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.278564, 0.84001)
 shape = SubResource("BoxShape3D_3aikg")
