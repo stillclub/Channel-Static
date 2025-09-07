@@ -1,0 +1,175 @@
+[gd_scene load_steps=14 format=4 uid="uid://ce7cpolw0hojm"]
+
+[ext_resource type="Texture2D" uid="uid://c27asiy7le82t" path="res://ttv_T_TVCRT.png" id="2_cef6f"]
+[ext_resource type="VideoStream" uid="uid://bnwjhlu0pqmsy" path="res://Adobe Express - 1080-142790249_small.ogv" id="3_arbd3"]
+[ext_resource type="Shader" uid="uid://cd3nwk8pl4q0s" path="res://tv.gdshader" id="3_fhptl"]
+[ext_resource type="Shader" uid="uid://7nmeyo4rvxwk" path="res://crt.gdshader" id="5_yrgmy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fu3cl"]
+resource_name = "M_TVCRT"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("2_cef6f")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ni1jq"]
+_surfaces = [{
+"aabb": AABB(-0.3, -3.87426e-08, -0.24, 0.6, 0.54, 0.45),
+"format": 34896613377,
+"index_count": 186,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAAAEAAEABQAEAAAAAQAGAAIAAAAHAAUAAAADAAcABQAIAAQAAgAJAAMABgAJAAIACQAKAAMAAwAKAAsAAwALAAcACQAMAAoADAALAAoADAANAAsADQAHAAsADgAMAAkADgANAAwABgAOAAkADQAOAAcADgAPAAcABQAHAA8ADgAQAA8ABQAPABEAEQAPABAACAAFABEAEgAQAA4AEgAOAAYAEQAQABIABgATABIAEQASABMAEQATAAgABgABABMAAQAUABMAEwAVAAgAEwAUABUAFgAUAAEAFgAVABQAFgABABcAGAAVABYAGQAIABUAFQAYABkACAAZABoAGgAXAAEACAAaAAQAGgABAAQAGwAaABkAGwAXABoAGwAZABgAFwAcABYAGAAWABwAFwAbAB0AFwAdABwAGAAeABsAGwAeAB8AGwAfAB0AGAAgAB4AHAAgABgAHQAfACEAHAAhACAAHQAhABwA"),
+"name": "M_TVCRT",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 34,
+"vertex_data": PackedByteArray("quuq64eIAAAAAP//iIgAAFQUquuIiAAA99tDzDIzAAD+////h4gAAKrrFnuHiAAAVBQWe4iIAAD3275wMjMAAP7/AACHiAAAByRDzDMzAADj03+7AAAAAOPToIIAAAAAGyx/uwAAAAAbLKCCAAAAAAckvnAzMwAA99s5FTIzAAAHJDkVMzMAAKrrggqHiAAAVBSCCoiIAAAAAAAAiIgAAAAAAAD//wAA//8AAP7/AAAAAKQ5//8AAAAA/////wAAiO6kOf7/AAD//6Q5/v8AAP7////+/wAAiO6i5v7/AABvEaQ5//8AAG8Roub//wAAiO6i5uL4AABvEaLm4vgAAIjupDni+AAAbxGkOeL4AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_swxlf"]
+resource_name = "ttv_Cube_001"
+_surfaces = [{
+"aabb": AABB(-0.3, -3.87426e-08, -0.24, 0.6, 0.54, 0.45),
+"attribute_data": PackedByteArray("b9oQE8zhc2hv2hVhzOGyC8zhsgtv2hI6b9oQE8zhc2hv2hVh/6NvRDOIVSj/o6UhM4jvPK7hc2hQ2hI6UNoVYa7hsgtQ2hATq91wQv+j7SGr3fYS/6NvRKvd63H/o/Jqq91wQv+j8mqr3etx/6NvRKvd9hL/o+0hL6fhyM1WHK97UOHI3KAcr/+jpSEziO88/6NvRDOIVSj5ePlx/3D9Wfl4/Vn/cAQP+XgHBAoE/VkKBPlxAAz9WQoEBwQADAQP6q1w0xRKpvkUSnDT6q2m+aKekIHQXwGP31qQgbGZAY9hpWl/AFJ9lgNWaX9kqX2WsZkBj8FkcpzQXwGPwJRynFDaEBOu4XNoruGyC1DaFWEyryDSzEg/qjKvP6rMSCDSmUXYq2WyZeJlstirmUVl4katpZl4SmDIuEqlmYatYMhi9fFYWN5IcWL1SHFi9TAFWN4wBfx0BkUCc/kg/HT5IAJzBkUEbQJa+in8W/opAloEbfxb/HSZTAJzZhn8dGYZAnOZTPx0+SACcwZF/HQGRQJz+SBi9fFYWN4wBWL1MAVi9UhxWN5IcQ=="),
+"format": 34896613399,
+"index_count": 186,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABQAEAAcABQAHAAgACQAKAAsACQAMAAoADQAOAA8ADgANABAADgAQABEAEgATABQAEgAVABMAFgAVABIAFgAXABUAGAAZABoAGAAbABkAHAAbABgAHAAdABsAHgAfACAAHgAhAB8AIgAjACQAIgAlACMAJgAnACgAKQAoACcAKQAqACgAJwAmACsAKwAmACwAJwArAC0ALgAtACsAKQAuACoALgAvAC0ALgApAC8AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkATABNAE4ATABPAE0AUABRAFIAUQBQAFMAUQBTAFQAVQBWAFcAVQBYAFYAWQBaAFsAWQBcAFoAXQBeAF8AXQBgAF4AYQBiAGMAYQBkAGIAZQBmAGcAZQBoAGYAZgBoAGkA"),
+"material": SubResource("StandardMaterial3D_fu3cl"),
+"name": "M_TVCRT",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 106,
+"vertex_data": PackedByteArray("quuq64eI//8AAP//iIj//1QUquuIiP///v///4eI//8AAP//iIj//1QUFnuIiP//VBSq64iI//8AAAAAiIj//1QUggqIiP//ByS+cDMzcsgbLH+7AABxyAckQ8wzM3HIGyygggAAesj+/wAAh4gAAKrrFnuHiAAAquuCCoeIAAD+////h4gAAKrrquuHiAAAVBQWe4iI0MkHJEPMMzPNyVQUquuIiNPJByS+cDMz18lUFIIKiIjZyQckORUzM9nJqusWe4eI7wH32zkVMjP3AarrggqHiP0B99u+cDIzHAGq66rrh4ikAPfbQ8wyM9QCquuCCoeI5zkHJDkVMzPnOVQUggqIiOc599s5FTIz5zn320PMMjMQAOPToIIAAIUA99u+cDIzFgHj03+7AAD+AP//AAD+/wCAiO6kOf7/AID//6Q5/v8AgIjuoub+/wCA/v////7/AIAAAKQ5//8AgAAAAAD//wCAbxGkOf//AIAAAP////8AgG8Roub//wCAByS+cDMz///32zkVMjP///fbvnAyM///ByQ5FTMz//9UFKrriIj///fbQ8wyM///quuq64eI//8HJEPMMzP//xssoIIAAP//99u+cDIz///j06CCAAD//wckvnAzM///ByRDzDMz///j03+7AAD///fbQ8wyM///Gyx/uwAA//+q64IKh4gAAAAAAACIiAAA/v8AAIeIAABUFIIKiIgAAP7////+//+/AAD//4iI/7/+////h4j/vwAA//////+/AAAAAIiI/z///wAA/v//P/7/AACHiP8/AAAAAP///z8bLH+7AAD//+PToIIAAP//49N/uwAA//8bLKCCAAD/////pDn+/wAA/v8AAIeIAAD//wAA/v8AAP7////+/wAA/v///4eIAACI7qQ5/v//v4juoubi+P+/iO6i5v7//7+I7qQ54vj/v28RpDn/////iO6kOeL4//+I7qQ5/v///28RpDni+P//iO6i5v7/VNVvEaLm4vhU1W8Roub//1TViO6i5uL4VNVvEaLm//8AAG8RpDni+AAAbxGkOf//AABvEaLm4vgAAAAApDn///+/AAD//4iI/78AAP//////vwAAAAD///+/AAAAAIiI/7//v/+//7//v/+//7//v/+/oYBc/2WMmfNtfWz96ZUU6pKXbOgYg0n+dIC+/9B+2v0VhxX8FOrplZnzZYxs6JKXXP+hgGz9bH3BhFT9Zn/t/pp88Pnkh5L7XIhP+4CIOvu0AjhGvgIyRsgCLUaQAdtGOccXf4nFFHwAAP9/AAD/fwAA/38AAP9/msbnf7YAQkZ7AdZF6MWlfv9/////f////3////9/////f////3////9/////f////3////9/////f////3/+//9//v//f////39/zf9/f83/f3/N/39/zd5M///eTP//3kz//95M////fx/M/38fzP9/H8z/fx/M/7//P/8//7//v/8//z//v////3////9/////f////38AAP9/AAD/fwAA/38AAP9//3////9/////f/7//3////+//3//v/9//7//f/+//3//v/9//3////9/////f////3////9//7//f/+//3//v/9//7+qKlTVqipU1aoqVNWqKlTV/7//f/+//3//v/9//7//f/9//v//f////3////9//v//f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ni1jq")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_n6ff8"]
+viewport_path = NodePath("TV_Screen/SubViewport")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tn3tf"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("3_fhptl")
+shader_parameter/screen_texture = SubResource("ViewportTexture_n6ff8")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_qgq0n"]
+_surfaces = [{
+"aabb": AABB(-0.259138, 0.121596, 0.1975, 0.518213, 0.36491, 1e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "M_TVCRT",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAD+/4YBAAD//wAAAAAAAAAAAACGAQAA/v///wAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gfjub"]
+resource_name = "ttv_Cube_003"
+_surfaces = [{
+"aabb": AABB(-0.259138, 0.121596, 0.1975, 0.518213, 0.36491, 1e-05),
+"attribute_data": PackedByteArray("AAwED/9v/VkADP1Z/28EDw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "M_TVCRT",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAD+/4YBAID//wAAAAAAgAAAAACGAQCA/v///wAAAID/f////3////9/////f///")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_qgq0n")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_teu25"]
+shader = ExtResource("5_yrgmy")
+shader_parameter/overlay = false
+shader_parameter/scanlines_opacity = 0.187
+shader_parameter/scanlines_width = 0.25
+shader_parameter/grille_opacity = 0.0
+shader_parameter/resolution = Vector2(640, 480)
+shader_parameter/pixelate = false
+shader_parameter/roll = true
+shader_parameter/roll_speed = 8.0
+shader_parameter/roll_size = 15.0
+shader_parameter/roll_variation = 1.8
+shader_parameter/distort_intensity = 0.05
+shader_parameter/noise_opacity = 0.4
+shader_parameter/noise_speed = 5.0
+shader_parameter/static_noise_intensity = 0.06
+shader_parameter/aberration = 0.03
+shader_parameter/brightness = 1.4
+shader_parameter/discolor = true
+shader_parameter/warp_amount = 0.495
+shader_parameter/clip_warp = false
+shader_parameter/vignette_intensity = 0.5
+shader_parameter/vignette_opacity = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3aikg"]
+size = Vector3(1, 0.810059, 1.06635)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="TV_Body" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_swxlf")
+skeleton = NodePath("")
+
+[node name="TV_Screen" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_tn3tf")
+mesh = SubResource("ArrayMesh_gfjub")
+skeleton = NodePath("")
+
+[node name="SubViewport" type="SubViewport" parent="TV_Screen"]
+size = Vector2i(640, 480)
+
+[node name="Control" type="Control" parent="TV_Screen/SubViewport"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 48.0
+offset_top = 131.0
+offset_right = -390.0
+offset_bottom = -124.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(329, 229)
+
+[node name="Node" type="Node" parent="TV_Screen/SubViewport/Control"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="TV_Screen/SubViewport/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = 176.0
+offset_right = 34.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("3_arbd3")
+autoplay = true
+loop = true
+
+[node name="ColorRect" type="ColorRect" parent="TV_Screen/SubViewport/Control"]
+material = SubResource("ShaderMaterial_teu25")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = 176.0
+offset_right = 37.0
+offset_bottom = 98.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(347, 234)
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.278564, 0.585846)
+shape = SubResource("BoxShape3D_3aikg")
